@@ -175,7 +175,6 @@ for i=1:67
     model_tre(i+1) = changeRxnBounds(model_tre(i+1),'NGAM',0,'l');
     model_tre(i+1) = changeRxnBounds(model_tre(i+1),'EX0001',0,'b');
 
-    model_tre(i+1) = changeRxnBounds(model_tre(i+1),'EXBiomass',0,'b');
     solMORP = MORP(model_tre(i+1),result_tre(i));
     MORPt(:,i+1)=solMORP.x;
     result_tre(i+1).rxns = ecModel.rxns;
